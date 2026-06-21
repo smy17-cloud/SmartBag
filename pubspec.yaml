@@ -1,0 +1,50 @@
+name: cartable_app
+description: "Application de vérification du cartable scolaire avec scan QR code."
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.3.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  # --- Icônes Material par défaut ---
+  cupertino_icons: ^1.0.6
+
+  # --- Gestion d'état ---
+  provider: ^6.1.2
+
+  # --- Stockage local NoSQL rapide ---
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # --- Scanner de QR code (utilise CameraX sous Android) ---
+  mobile_scanner: ^5.2.3
+
+  # --- Notifications locales programmées ---
+  flutter_local_notifications: ^17.2.3
+
+  # --- Gestion des fuseaux horaires (requis par flutter_local_notifications) ---
+  timezone: ^0.9.4
+
+  # --- Gestion propre des permissions (caméra, notifications) ---
+  permission_handler: ^11.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  # --- Génération automatique du code Hive (TypeAdapter) ---
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.13
+
+  flutter_lints: ^4.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Décommente et ajoute un dossier assets/ si tu ajoutes des icônes/images personnalisées
+  # assets:
+  #   - assets/images/
